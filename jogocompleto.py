@@ -2,10 +2,14 @@
 import random 
 na = random.randint(0,100)
 tent = 0
+print('Seja Bem Vindo. --dg--'.center(45,'-'))
+print('O Numero Esta Entre 0 e 100')
 if na % 2 == 0:
     print('DICA: o numero aleatorio é par')
+    print ()
 else:
     print('DICA: o numero aleatorio é impar')
+    print()
 while True:
     try:
         chute = int(input('digite o seu chute: '))
@@ -14,6 +18,7 @@ while True:
             continue
         tent += 1
         print('essa foi sua tentativa de numero: ',tent)
+        print()
         if tent == 10:
             print('acabou as tentativas')
             break
